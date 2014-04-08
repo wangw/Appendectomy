@@ -8,7 +8,7 @@
 #----------------------------------------------------------------------------------------------------------------------------
 function connect_to_db()
 {
-	if($link = mysql_pconnect("59.125.43.46", DBName, PASSWORD)
+	if($link = mysql_pconnect(DBIP, DBName, PASSWORD)
 	{
 		mysql_query("SET NAMES 'utf8'");
 		if(mysql_select_db("appendectomy", $link))
